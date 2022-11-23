@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr;
     width: 100vw;
     height: 100vh;
-    background-image: url('../Assets/mainmenu.jpg');
+    background-image: url('../Assets/mainmenu.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     animation-name: fadeIn;

@@ -4,6 +4,7 @@ import "./App.css";
 
 // Pages
 import Homepage from "./pages/Homepage";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </div>
     </Router>
