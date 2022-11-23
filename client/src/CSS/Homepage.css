@@ -1,0 +1,161 @@
+.home-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../Assets/mainmenu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+@media (max-width: 450px) {
+  .description {
+    font-size: 5vw!important;
+  }
+  .my-name {
+    font-size: 5vw!important;
+  }
+  .my-description {
+    font-size: 2.5vw!important;
+    margin-top: 30%!important;
+  }
+}
+
+.my-name {
+    color: white;
+    font-size: 4vw;
+    font-family: 'Ssf4Abuket-7AVD';
+    grid-column: 2;
+    grid-row: 1;
+    height: 30%;
+    justify-self: right;
+    padding-top: 3%;
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+}
+
+.my-description {
+    color: white;
+    font-size: 1.5vw;
+    text-shadow: 0px 0px 10px #FF0000;
+    font-family: 'Ssf4Abuket-7AVD';
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: right;
+    padding-right: 5%;
+    margin-top: 25%;
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+}
+
+.description {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    padding-left: 10%;
+    color: white;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.712) , rgba(255, 255, 255, 0));
+    text-shadow: 2px 2px #000000;
+    font-size: 2vw;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    font-family: 'Roboto';
+}
+
+.main-nav {
+    text-align: left;
+    margin-top: 5%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.712) , rgba(255, 255, 255, 0));
+    font-weight: 500;
+    text-shadow: 2px 2px #000000;
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+}
+
+@media (max-width: 450px) {
+    .main-nav {
+        margin-top: 25px;
+    }
+    .selection {
+        padding-top: 15px!important;
+        padding-bottom: 15px!important;
+        font-size: 5vw!important;
+    }
+}
+
+.selection {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 20%;
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Roboto';
+}
+  
+.selection:hover {
+    animation: pulse-red 1s infinite;
+}
+
+@keyframes pulse-red {
+	0% {
+    background-color: rgba(255, 0, 0, 0);
+  }
+
+	50% {
+    background-color: red;
+  }
+
+  100% {
+    background-color: rgba(255, 0, 0, 0);
+	}
+}
+
+@keyframes pulse-red2 {
+	0% {
+        background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 255, 255, 0));
+    }
+
+	50% {
+        background: linear-gradient(to right, red , rgba(255, 255, 255, 0));
+    }
+
+    100% {
+        background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 255, 255, 0));
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translate3d(-100%, 0, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
